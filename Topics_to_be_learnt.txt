@@ -1,0 +1,14 @@
+SELECT
+Where - AND OR IN 
+ORDER BY - LIMIT , TOP , ASC , DESC , OFFSET 
+Aggregate Functions - MIN MAX AVG 
+Pattern matching - LIKE  
+Group by + Having
+Sub queries
+JOINS - LEFT RIGHT FULL SELF UNION 
+_________________________________________
+WINDOW FUNCTIONS 
+PARTITIONS
+RANK - DENSE RANK 
+CAST 
+DATE TIME FUCNTIONS (***)
