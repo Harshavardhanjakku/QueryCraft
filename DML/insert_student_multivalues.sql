@@ -5,3 +5,4 @@ INSERT INTO student VALUES
 (19,"Hari","BSC",23),
 (32,"SNR","EEE",21),
 (35,"Sri","ECE",20);
+
