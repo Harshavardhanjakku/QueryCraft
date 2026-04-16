@@ -25,6 +25,8 @@ WHERE id!=17;
 SELECT * FROM student 
 where branch not in ("BSC","EEE");
 
+SELECT * FROM student 
+where branch in ("BSC","EEE");
 
 -- between inclusive
 SELECT * FROM student 
