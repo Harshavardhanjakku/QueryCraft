@@ -7,3 +7,5 @@ WHERE city="Wgl";
 
 SELECT * FROM student
 WHERE marks%2;
+SELECT * from student
+where 
