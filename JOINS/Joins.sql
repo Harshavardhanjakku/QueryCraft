@@ -22,3 +22,14 @@ FROM student S
 RIGHT JOIN course C 
 ON S.rollno = C.rollno
 WHERE S.rollno IS NULL;
+
+-- FULL JOIN 
+
+SELECT * FROM student S 
+LEFT JOIN course C 
+on S.rollno=C.rollno
+UNION 
+SELECT * FROM student S
+RIGHT JOIN course C 
+ON S.rollno = C.rollno
+WHERE S.rollno IS NULL;
