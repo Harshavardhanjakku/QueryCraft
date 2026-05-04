@@ -1,0 +1,1 @@
+SELECT (SELECT avg(marks) from student) as Average;

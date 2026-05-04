@@ -1,3 +1,4 @@
+USE sru;
 CREATE TABLE courses
 (
 courseid INT PRIMARY KEY,
@@ -67,3 +68,32 @@ ON S.cid=C.courseid
 WHERE s.cid is NULL;
 
 
+CREATE TABLE Employee (
+    id INT PRIMARY KEY,
+    name VARCHAR(20),
+    manager_id INT,
+    FOREIGN KEY (manager_id) REFERENCES Employee(id)
+);
+
+INSERT INTO Employee (id, name, manager_id) VALUES
+(103, 'casey', NULL);
+INSERT INTO Employee (id, name, manager_id) VALUES
+(101, 'adam', 103),
+(104, 'donald', 103),
+(102, 'bob', 104);
+
+SELECT * FROM Employee;
+
+
+SELECT Emp2.name as EmployeeName,Emp1.name as Managername  FROM Employee as Emp1 
+JOIN Employee as Emp2 
+ON Emp1.id=Emp2.manager_id;
+
+
+SELECT * FROM EMPLOYEE 
+UNION 
+SELECT * FROM EMPLOYEE;
+
+SELECT * FROM EMPLOYEE 
+UNION ALL
+SELECT * FROM EMPLOYEE;
